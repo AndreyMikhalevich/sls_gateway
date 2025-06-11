@@ -1,4 +1,4 @@
---Получение списка всех устройств из devices.json, и вывод последнего времени в сети и разницы с текущим 
+--Получение списка всех устройств из devices.json, вывод последнего времени в сети и разницы с текущим 
 local currentTime = os.time()
 local devJson = os.fileRead("/int/devices.json")
 for id, obj in devJson:gmatch('"(.-)"%s*:%s*(%b{})') do
